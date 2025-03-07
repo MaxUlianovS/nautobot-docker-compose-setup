@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nautobot-nornir-fortinet"
+version = "0.1.0"
+description = "Nornir Nautobot Fortinet driver for Nornir-Nautobot"
+authors = [
+    {name = "mulianov", email = "mulianov@sirt.com"},
+]
+license = {text = "Apache Software License 2.0"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.9"
+keywords = ["nautobot_nornir_fortinet", "fortinet-driver"]
+
+[project.urls]
+Homepage = "https://sirt.com"
+
+[tool.setuptools.packages.find]
+include = ["nautobot_nornir_fortinet", "nautobot_nornir_fortinet.*"]
